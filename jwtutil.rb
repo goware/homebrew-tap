@@ -5,21 +5,21 @@
 class Jwtutil < Formula
   desc "handy little jwt debugging utility to encode/decode tokens"
   homepage "https://github.com/goware/jwtutil"
-  version "0.6.1"
+  version "0.6.3"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/goware/jwtutil/releases/download/v0.6.1/jwtutil.darwin-amd64"
-      sha256 "b04286239d7fe150de34271f3ac5b6d0cf62b0eae3c958dcb0c1ce374efac04f"
+      url "https://github.com/goware/jwtutil/releases/download/v0.6.3/jwtutil.darwin-amd64"
+      sha256 "113e094b2cee932d56bac64a5fbab4ae71506e5fdc9bf8a907dfb436eb50ae27"
 
       def install
         bin.install "jwtutil.darwin-amd64" => "jwtutil"
       end
     end
     on_arm do
-      url "https://github.com/goware/jwtutil/releases/download/v0.6.1/jwtutil.darwin-arm64"
-      sha256 "b932c29cfdf8f0e3df78467ac482db5362fdbc6bcaef293397fd07c9e4083a64"
+      url "https://github.com/goware/jwtutil/releases/download/v0.6.3/jwtutil.darwin-arm64"
+      sha256 "58ca713b50377480b8db35ce0c2ffd94e21aaf39b184dc93ca61879768907bef"
 
       def install
         bin.install "jwtutil.darwin-arm64" => "jwtutil"
@@ -30,8 +30,8 @@ class Jwtutil < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/goware/jwtutil/releases/download/v0.6.1/jwtutil.linux-amd64"
-        sha256 "c8f92bd9cf4a720306ce12d932cc5bb3d1f079a527b89e195b941c999544d4ae"
+        url "https://github.com/goware/jwtutil/releases/download/v0.6.3/jwtutil.linux-amd64"
+        sha256 "4070c9be7a2c615e90371f6577eabd4e5725aab70ea33c36b72a98be0da30e3e"
 
         def install
           bin.install "jwtutil.linux-amd64" => "jwtutil"
@@ -40,8 +40,8 @@ class Jwtutil < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/goware/jwtutil/releases/download/v0.6.1/jwtutil.linux-arm64"
-        sha256 "1e9de8691c958c8e5e23f3f27fd58f5e3abd34702a6a75935d57f9226e6c5bb6"
+        url "https://github.com/goware/jwtutil/releases/download/v0.6.3/jwtutil.linux-arm64"
+        sha256 "31d51c916d357963e53f64c6f90d4cd20b5c979b4d5d954641586ac55a30ca10"
 
         def install
           bin.install "jwtutil.linux-arm64" => "jwtutil"
